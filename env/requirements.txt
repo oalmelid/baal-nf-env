@@ -1,0 +1,11 @@
+fastqc=0.11
+fastq-screen=0.14
+trim-galore=0.6
+samtools=1.10
+bowtie2=2.3
+picard=2.23
+multiqc=1.9
+python=3.7
+pandas=1.0
+pyranges
+
