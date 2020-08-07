@@ -3,6 +3,7 @@ fastq-screen=0.14
 trim-galore=0.6
 samtools=1.10
 bowtie2=2.3
+bedtools=2.29
 picard=2.23
 multiqc=1.9
 python=3.7

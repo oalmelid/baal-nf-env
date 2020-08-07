@@ -11,4 +11,4 @@ COPY env/requirements.txt /env/
 
 # To be removed in future versions
 RUN . /opt/conda/etc/profile.d/conda.sh && conda activate base
-RUN cat /env/requirements.txt | xargs conda install --yes -c bioconda -c conda-forge nomkl
+RUN cat /env/requirements.txt | xargs conda install --yes -c bioconda -c conda-forge nomkl && conda clean -a
