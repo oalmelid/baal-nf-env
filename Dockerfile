@@ -7,8 +7,7 @@ USER root
 RUN apk add bash
 USER 10151
 
-COPY env/requirements.txt /env/
+COPY env/* /env/
 
-# To be removed in future versions
-RUN . /opt/conda/etc/profile.d/conda.sh && conda activate base
-RUN cat /env/requirements.txt | xargs conda install --yes -c bioconda -c conda-forge nomkl && conda clean -a
+RUN conda env create --file /env/environment.yml && conda clean -a
+ENV PATH=/opt/conda/envs/baal-nf/bin:$PATH
