@@ -1,6 +1,6 @@
 LOCAL_IMAGE := baal-nf-env
 REMOTE_IMAGE := oalmelid/${LOCAL_IMAGE}
-TAG := nf-core
+TAG := environment-yml
 .DEFAULT_GOAL := image
 
 .PHONY: image publish
