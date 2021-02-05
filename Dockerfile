@@ -1,4 +1,4 @@
-FROM nfcore/base:1.10.2
+FROM nfcore/base:1.12.1
 
 RUN apt-get update && apt-get -y install unzip
 
