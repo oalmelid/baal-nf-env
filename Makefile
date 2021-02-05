@@ -14,4 +14,4 @@ image: .image_built
 publish: image
 	docker tag $(LOCAL_IMAGE):$(TAG) $(REMOTE_IMAGE):$(TAG)
 	docker push $(REMOTE_IMAGE):$(TAG)
- 
+

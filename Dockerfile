@@ -1,13 +1,6 @@
-FROM continuumio/miniconda3:4.8.2-alpine
+FROM nfcore/base:1.10.2
 
-ENV PATH /opt/conda/bin:$PATH
-
-# install bash, as it's required by nextflow
-USER root
-RUN apk add bash gzip; ln -fs /usr/bin/zcat /bin/zcat
-USER 10151
+RUN apt-get update && apt-get -y install unzip
 
 COPY env/* /env/
-
-RUN conda env create --file /env/environment.yml && conda clean -a
-ENV PATH=/opt/conda/envs/baal-nf/bin:$PATH
+RUN conda env update -n root --file /env/environment.yml && conda clean -a
