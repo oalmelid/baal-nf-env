@@ -1,6 +1,6 @@
 LOCAL_IMAGE := baal-nf-env
 REMOTE_IMAGE := oalmelid/${LOCAL_IMAGE}
-TAG := dedup
+TAG := latest
 .DEFAULT_GOAL := image
 
 .PHONY: image publish
