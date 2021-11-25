@@ -16,9 +16,9 @@ dependencies:
   - pysam=0.17
   - python=3.7
   - samtools=1.13
+  - star=2.7.9a
   - trim-galore=0.6
   - wget=1.20
   - nomkl=1.0
   - umi_tools=1.1
   - tbb=2020.2 # Added to work around dependency issue in bowtie2
-  - star=2.7.9a
