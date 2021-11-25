@@ -21,3 +21,4 @@ dependencies:
   - nomkl=1.0
   - umi_tools=1.1
   - tbb=2020.2 # Added to work around dependency issue in bowtie2
+  - star=2.7.9a
